@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Hello, <br><br> Please enter the follow:
+
+<br>Name: <input type="text" id="name" value="Daniel">
+<br>Age: <input type="text" id="age" value="28">
+<br>Favourite Colour: <input type="text" id="colour" value="Teal">
+
+<button onclick="compute()">Submit</button>
+
+<script>
+function compute() {
+  let name = document.getElementById("name").value;
+  let age = document.getElementById("age").value;
+  let colour = document.getElementById("colour").value;
+
+console.log(`My name is ${name}, I'm ${age} years old and my favourite colour is ${colour}`);
+}
+</script>
+
+</body>
+</html>
+
+
+//---------------------------------------------
+<!DOCTYPE html>
+<html>
+<body>
+
+Hello <br><br> What did you eat today (day 1) for:<br>
+
+<br>Breakfast: <input type="text" id="breakfast" value="">
+<br>Lunch: <input type="text" id="lunch" value="">
+<br>Dinner: <input type="text" id="dinner" value="">
+
+<br><br><button onclick="day1()">Submit</button>
+
+<script>
+    let breakfast
+  let lunch
+  let dinner
+function day1() {
+  breakfast = document.getElementById("breakfast").value;
+  lunch = document.getElementById("lunch").value;
+  dinner = document.getElementById("dinner").value;
+
+console.log(`Today I ate ${breakfast} for breakfast, ${lunch} for lunch and ${dinner} for dinner`);
+}
+</script>
+<br><br> What did you eat today (day 2) for:<br>
+
+<br>Breakfast: <input type="text" id="breakfast2" value="">
+<br>Lunch: <input type="text" id="lunch2" value="">
+<br>Dinner: <input type="text" id="dinner2" value="">
+  
+  <br><br><button onclick="day2()">Submit</button>
+<script>
+function day2() {
+  breakfast = document.getElementById("breakfast2").value;
+  lunch = document.getElementById("lunch2").value;
+  dinner = document.getElementById("dinner2").value;
+
+console.log(`Today I ate ${breakfast} for breakfast, ${lunch} for lunch and ${dinner} for dinner`);
+}
+</script>
+  
+</body>
+</html>
+
+
+
+
+
+
+//--------------------------------------------------------
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+Hello, <br><br> When day is your birthday:
+
+<br>Day: <input type="text" id="day" value="15">
+<br>Month: <input type="text" id="month" value="08">
+<br>Year: <input type="text" id="year" value="1992">
+
+<br><br><button onclick="calculate()">Submit</button>
+
+<script>
+function calculate(){
+
+let d = getDate();
+let m = getMonth()++;
+let y = getFullYear()
+console.log(d+m+y);
+}
+</script>
+
+</body>
+</html>
