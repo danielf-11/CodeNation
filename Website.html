@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Hello World</h1>, 
+
+<div>
+<h2><br><br> Please enter the follow:</h2>
+
+<br>Name: <input type="text" id="name" value="Daniel">
+<br>Age: <input type="text" id="age" value="28">
+<br>Favourite Colour: <input type="text" id="colour" value="Teal">
+
+<button onclick="compute()">Submit</button>
+</div>
+
+<script>
+function compute() {
+  let name = document.getElementById("name").value;
+  let age = document.getElementById("age").value;
+  let colour = document.getElementById("colour").value;
+
+
+
+console.log(`My name is ${name}, I'm ${age} years old and my favourite colour is ${colour}`);
+}
+</script>
+
+</body>
+</html>
